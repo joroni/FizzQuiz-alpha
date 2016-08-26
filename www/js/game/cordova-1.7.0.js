@@ -4147,7 +4147,7 @@ var CupcakeLocalStorage = function() {
 
     } catch(e) {
           utils.alert("Database error "+e+".");
-        return;
+
     }
 };
 

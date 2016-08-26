@@ -621,9 +621,8 @@ if ( eventCaptureSupported ) {
   function get_fragment( url ) {
     url = url || location.href;
     return '#' + url.replace( /^[^#]*#?(.*)$/, '$1' );
-  };
-  
-  // Method: jQuery.fn.hashchange
+  }
+    // Method: jQuery.fn.hashchange
   // 
   // Bind a handler to the window.onhashchange event or trigger all bound
   // window.onhashchange event handlers. This behavior is consistent with
@@ -806,9 +805,8 @@ if ( eventCaptureSupported ) {
       }
       
       timeout_id = setTimeout( poll, $.fn[ str_hashchange ].delay );
-    };
-    
-    // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+    }
+      // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     // vvvvvvvvvvvvvvvvvvv REMOVE IF NOT SUPPORTING IE6/7/8 vvvvvvvvvvvvvvvvvvv
     // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     $.browser.msie && !supports_onhashchange && (function(){
@@ -1687,9 +1685,9 @@ $.mobile.browser.ie = (function() {
 
 	// added {} to silence closure compiler warnings. registering my dislike of all things
 	// overly clever here for future reference
-	while ( div.innerHTML = "<!--[if gt IE " + ( ++v ) + "]><br><![endif]-->", a[ 0 ] ){};
-
-	return v > 4 ? v : !v;
+    while (div.innerHTML = "<!--[if gt IE " + ( ++v ) + "]><br><![endif]-->", a[0]) {
+    }
+    return v > 4 ? v : !v;
 })();
 
 
@@ -2297,7 +2295,7 @@ var createHandler = function( sequential ){
 
 		return deferred.promise();
 	};
-}
+};
 
 // generate the handlers from the above
 var sequentialHandler = createHandler(),
@@ -2700,7 +2698,7 @@ $.mobile.transitionFallbacks = {};
 		else{
 			page.focus();
 		}
-	}
+	};
 
 	//remove active classes after page transition or error
 	function removeActiveLinkClass( forceRemoval ) {
