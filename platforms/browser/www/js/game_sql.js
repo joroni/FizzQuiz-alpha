@@ -111,10 +111,10 @@ function populateQuizTable(tx) {
 
     var sql =
         "CREATE TABLE IF NOT EXISTS QuizTable ( " +
-            "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-            "question VARCHAR(500), " +
-            "answers VARCHAR(1000), " +
-            "correct_answer INTEGER)";
+        "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+        "question VARCHAR(500), " +
+        "answers VARCHAR(1000), " +
+        "correct_answer INTEGER)";
     tx.executeSql(sql);
 
 
@@ -139,9 +139,9 @@ function populateResultsTable(tx) {
 
     var sql =
         "CREATE TABLE IF NOT EXISTS QuizResultTable ( " +
-            "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-            "question_no INTEGER, " +
-            "selected_answer INTEGER )";
+        "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+        "question_no INTEGER, " +
+        "selected_answer INTEGER )";
     tx.executeSql(sql);
 
     for (var i=0; i < quizy.length; i++)
@@ -170,7 +170,7 @@ function populateDB_success() {
 
 function getQuestions(tx)
 {
-    var sql = "select * from QuizTable"; 
+    var sql = "select * from QuizTable";
     tx.executeSql(sql, [], getQuestions_success);
 }
 
@@ -210,8 +210,8 @@ function getQuestions_success(tx,results)
 }
 
 function checkResults(tx) {
-        var query = "select count(*) as count from QuizResultTable where selected_answer = 1";
-        var res  = tx.executeSql(query,[], checkResultsSuccess);    
+    var query = "select count(*) as count from QuizResultTable where selected_answer = 1";
+    var res  = tx.executeSql(query,[], checkResultsSuccess);
 }
 
 function checkResultsSuccess(tx,results) {
@@ -219,13 +219,13 @@ function checkResultsSuccess(tx,results) {
     $('#result-answers').text(" " + result + " / " + total_questions);
 }
 
- 
+
 
 
 function updateSelectedAnswer(tx) {
-        var q_no = window.localStorage.getItem("currentQuestion");
-        var query = "select correct_answer from Quiztable where id = " + (q_no);
-        var res  = tx.executeSql(query,[], updateSelectedAnswerSuccess);    
+    var q_no = window.localStorage.getItem("currentQuestion");
+    var query = "select correct_answer from Quiztable where id = " + (q_no);
+    var res  = tx.executeSql(query,[], updateSelectedAnswerSuccess);
 }
 
 
@@ -241,6 +241,6 @@ function updateSelectedAnswerSuccess(tx,results)  {
         else {
             query = "UPDATE QuizResultTable set selected_answer = 0 where question_no=" + q_no ;
         }
-        tx.executeSql(query);        
+        tx.executeSql(query);
     }
 }

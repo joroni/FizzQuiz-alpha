@@ -47,7 +47,7 @@ function getDatabase()
             alert("Invalid database version.");
         } else {
             alert("Unknown error "+e+".");
-        }return;
+        }
     }
 }
 
@@ -85,10 +85,11 @@ function databaseNotSetup(tx, error) {
 function readJsonFile() {
     $.ajax({
         url: "json/quiz.json",
+        //url: "http://104.238.96.209/~project/db/questions/1.json",
         dataType: "json",
         success: function(json) {
             $(json.questions).each(function(){
-                var questions_json = new Object();
+                var questions_json = {};
                 questions_json = this;
                 quizy.push(questions_json);
             });
@@ -119,10 +120,10 @@ function populateQuizTable(tx) {
 
 
     var questions ;
-    total_questions = quizy.length
+    total_questions = quizy.length;
     for (var i=0; i < quizy.length; i++)
     {
-        var myquestion = new Object();
+        var myquestion = {};
         myquestion = quizy[i];
         var query = "INSERT INTO QuizTable (id, question, answers, correct_answer) VALUES ('" +
             i + "', '" +
@@ -184,8 +185,8 @@ function getQuestions_success(tx,results)
         answers =quest.answers.split(",");
         var quest_div = "" +
             '<div data-role="page" data-dom-cache="true" id="quest' + question_no + '">' +
-            '<div data-role="header">'+
-            '<h1> Java Quiz</h1> ' +
+            '<div data-role="header" class="purple">'+
+          //  '<h1> Java Quiz</h1> ' +
             '</div>' +
             '<div data-role="content">' +
             '<p>' +  question_no  +  ". " +  quest.question + '</p>' +
@@ -215,7 +216,7 @@ function checkResults(tx) {
 }
 
 function checkResultsSuccess(tx,results) {
-    var result = results.rows.item(0).count
+    var result = results.rows.item(0).count;
     $('#result-answers').text(" " + result + " / " + total_questions);
 }
 

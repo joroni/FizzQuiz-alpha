@@ -47,7 +47,7 @@ function getDatabase()
             alert("Invalid database version.");
         } else {
             alert("Unknown error "+e+".");
-        }return;
+        }
     }
 }
 
@@ -88,7 +88,7 @@ function readJsonFile() {
         dataType: "json",
         success: function(json) {
             $(json.questions).each(function(){
-                var questions_json = new Object();
+                var questions_json = {};
                 questions_json = this;
                 quizy.push(questions_json);
             });
@@ -119,10 +119,10 @@ function populateQuizTable(tx) {
 
 
     var questions ;
-    total_questions = quizy.length
+    total_questions = quizy.length;
     for (var i=0; i < quizy.length; i++)
     {
-        var myquestion = new Object();
+        var myquestion = {};
         myquestion = quizy[i];
         var query = "INSERT INTO QuizTable (id, question, answers, correct_answer) VALUES ('" +
             i + "', '" +
@@ -215,7 +215,7 @@ function checkResults(tx) {
 }
 
 function checkResultsSuccess(tx,results) {
-    var result = results.rows.item(0).count
+    var result = results.rows.item(0).count;
     $('#result-answers').text(" " + result + " / " + total_questions);
 }
 

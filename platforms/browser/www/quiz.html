@@ -3,6 +3,7 @@
 <head>
     <title>PhoneGap</title>
     <meta content="width=device-width,initial-scale=1" name=viewport>
+    <link rel="stylesheet" href="game/css/custom.css">
     <link rel="stylesheet"  href="game/css/jquery.mobile-1.1.0.css" />
     <link rel="stylesheet"  href="game/css/master.css" />
     <link rel="stylesheet" href="game/css/jquery.mobile.theme-1.1.0.css">
@@ -71,15 +72,28 @@
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
     // document.addEventListener('deviceready', onDeviceReady(), false);
 
+
+    closeBrowser(){
+        if(history.length==1){
+            window.open('mobile/close');
+        }else{
+            history.back();
+        }
+    }
+
+
+
+
+
 </script>
 </head>
 <body onload="onDeviceReady()">
     <div data-role="page" id="start">
-        <div data-role="header">
+        <div data-role="header" class="purple">
             <h1>Quiz</h1>
         </div>
-        <div data-role="content" >
-            <p>Quiz on PhoneGap</p>
+        <div data-role="content" style="text-align: center;">
+            <span id="fizz-logo" style="width:150px; margin: 0 auto;"><img src="icon.png"></span>
             <div class="intro-container slide-container"  style="display: block;">
                 <p>Let's get started!</p>
                 <p><a href="#quest1" class="nav-start" data-role="button">Start</a></p>
@@ -88,7 +102,7 @@
     </div>
 
     <div data-role="page" id="finish">
-        <div data-role="header">
+        <div data-role="header" class="purple">
             <h1>Quiz Result</h1>
         </div>
         <div data-role="content" >
@@ -97,6 +111,7 @@
                 <p id="result-answers">
                 </p>
             </div>
+            <a href="javascript:;" onclick="closeBrowser()">Close</a>
         </div>
     </div>
 </body>
