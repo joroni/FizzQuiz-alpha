@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41c6550d-ad02-4238-b490-8e5484076c3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/game/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/game_Quiz-Java-Fundamentals.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/game_setting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/game_sql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/quiz-game.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/icon.png" afterPath="$PROJECT_DIR$/platforms/browser/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/icon.png" afterPath="$PROJECT_DIR$/platforms/browser/www/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/icon.png" afterPath="$PROJECT_DIR$/www/icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/custom.css" afterPath="$PROJECT_DIR$/www/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/game/js/cordova-1.7.0.js" afterPath="$PROJECT_DIR$/www/game/js/cordova-1.7.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/game/js/jquery.mobile-1.1.0.js" afterPath="$PROJECT_DIR$/www/game/js/jquery.mobile-1.1.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/game/js/sql.js" afterPath="$PROJECT_DIR$/www/game/js/sql.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/game/cordova-1.7.0.js" afterPath="$PROJECT_DIR$/www/js/game/cordova-1.7.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/game/jquery.mobile-1.1.0.js" afterPath="$PROJECT_DIR$/www/js/game/jquery.mobile-1.1.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/game/sql.js" afterPath="$PROJECT_DIR$/www/js/game/sql.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main.html" afterPath="$PROJECT_DIR$/www/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/quiz.html" afterPath="$PROJECT_DIR$/www/quiz.html" />
-    </list>
+    <list default="true" id="41c6550d-ad02-4238-b490-8e5484076c3b" name="Default" comment="" />
     <ignored path="FizzQuiz-alpha.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -449,12 +429,12 @@
       <option name="presentableId" value="Default" />
       <updated>1472203109598</updated>
       <workItem from="1472203111101" duration="8230000" />
-      <workItem from="1472214811756" duration="5990000" />
+      <workItem from="1472214811756" duration="6022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14220000" />
+    <option name="totallyTimeSpent" value="14252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="111" y="23" width="1204" height="724" extended-state="0" />
