@@ -12,22 +12,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="css/custom.css" type="text/css">
-    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
 
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"
             integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <!--  <script src="js/jquery-3.1.0.min.js" ></script>-->
+
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/user.js"></script>
     <script src="js/all.js"></script>
 
     <script type="text/javascript">
+        function showHome() {
+            $('fixed-tab-home').show();
+        }
+
+        function showProf() {
+            $('#fixed-tab-profile').show();
+        }
+
+        function showLeader() {
+            $('fixed-tab-board').show();
+        }
 
     </script>
 
 </head>
-<body onload="hideProf();">
+<body onload="">
 
 <!-- Simple header with fixed tabs. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
@@ -67,11 +78,11 @@
 
         <!-- Tabs -->
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-            <a href="#fixed-tab-home" class="mdl-layout__tab is-active">Home</a>
+            <a href="#fixed-tab-home" class="mdl-layout__tab is-active" onclick="showHome();">Home</a>
 
             <a href="#fixed-tab-profile" class="mdl-layout__tab" onclick="showProf();">Profile</a>
-            <a href="#fixed-tab-board" class="mdl-layout__tab ">Leader Board</a>
-            <!--  <a href="#fixed-tab-about" class="mdl-layout__tab">Incentives</a>-->
+            <a href="#fixed-tab-board" class="mdl-layout__tab"  onclick="showLeader();">Leader Board</a>
+            <!--  <a href="#fixed-tab-about" class="mdl-layout__tab">Incentives</a> -->
         </div>
 
     </header>
@@ -196,15 +207,9 @@
         </section>
 
 
-        <section class="mdl-layout__tab-panel" id="fixed-tab-about">
+        <section class="mdl-layout__tab-panel" style="display:none;" id="fixed-tab-about">
             <div class="page-content">
 
-                <!-- Icon List
-                <style>
-                    .demo-list-icon {
-                        width: 300px;
-                    }
-                </style> -->
 
                 <ul class="demo-list-icon mdl-list">
 
@@ -232,7 +237,7 @@
             </div>
         </section>
 
-        <section class="mdl-layout__tab-panel " id="fixed-tab-profile">
+        <section class="mdl-layout__tab-panel " style="display:none;" id="fixed-tab-profile">
             <div class="page-content">
 
 
@@ -257,7 +262,7 @@
 
             </div>
         </section>
-        <!-- <section class="mdl-layout__tab-panel " id="fixed-tab-home">
+        <!-- <section class="mdl-layout__tab-panel " style="display:none;" id="fixed-tab-home">
              <div class="page-content">
 
 
