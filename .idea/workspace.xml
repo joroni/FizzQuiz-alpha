@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41c6550d-ad02-4238-b490-8e5484076c3b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main.html" afterPath="$PROJECT_DIR$/www/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/quiz.html" afterPath="$PROJECT_DIR$/www/quiz.html" />
     </list>
     <ignored path="FizzQuiz-alpha.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="quiz.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/quiz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+            <state relative-caret-position="1424">
+              <caret line="113" column="109" selection-start-line="113" selection-start-column="109" selection-end-line="113" selection-end-column="109" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -423,12 +422,12 @@
       <option name="presentableId" value="Default" />
       <updated>1472203109598</updated>
       <workItem from="1472203111101" duration="8230000" />
-      <workItem from="1472214811756" duration="7987000" />
+      <workItem from="1472214811756" duration="8108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16217000" />
+    <option name="totallyTimeSpent" value="16338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="111" y="23" width="1204" height="724" extended-state="0" />
@@ -683,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/quiz.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+        <state relative-caret-position="1424">
+          <caret line="113" column="109" selection-start-line="113" selection-start-column="109" selection-end-line="113" selection-end-column="109" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
