@@ -7,7 +7,7 @@
 
 var quizy = [];
 var db;
-var dbCreated = false;
+var dbCreated = true;
 
 
 window.localStorage.setItem('currentQuestion',-1);
