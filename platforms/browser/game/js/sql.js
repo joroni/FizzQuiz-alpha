@@ -193,7 +193,7 @@ function getQuestions_success(tx,results)
             '<ul data-role="listview" class="answers" id="quest' + question_no + '-list" question-no='  + question_no +'>';
         for(var i=0;i<answers.length;i++)
         {
-            quest_div =  quest_div  + '<li  data-question-no="'+ question_no  + '" data-answer-no="' +  (i+1) + '" >' + answers[i] + '</li>';
+            quest_div =  quest_div  + '<li onclick=""  data-question-no="'+ question_no  + '" data-answer-no="' +  (i+1) + '" >' + answers[i] + '</li>';
         }
         quest_div = quest_div +
             '</ul><p><br/></p>';
