@@ -126,3 +126,15 @@ noNet('http://104.238.96.209/~project/db/json.php',
 
 
 
+function hideProf(){
+    $('#fixed-tab-profile').hide();
+}
+
+function showProf(){
+    $('#fixed-tab-profile').show();
+}
+
+
+
+
+

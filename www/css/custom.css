@@ -154,14 +154,16 @@ h1 {
 }
 
 
+ul.center-list li {
+    list-style: none;
+    padding:20px;
+    margin-left: -20px;
+}
 
 
-
-
-
-
-
-
+.mdl-layout.is-upgraded .mdl-layout__tab-panel {
+    height: 100%;
+}
 
 
 

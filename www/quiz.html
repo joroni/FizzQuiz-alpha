@@ -87,27 +87,74 @@
 
 
 
+
+
+
+
 </script>
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            var sec = 15;
+            var timer = setInterval(function() {
+               // $("#theQuiz").hide();
+                $("#mdtimer span").text(sec--);
+                if (sec == 0) {
+                    $("#makingdifferenttimer").delay(1000).fadeIn(1000);
+                    $("#mdtimer").hide(1000) .fadeOut(fast);
+
+
+                }
+            },1000);
+        });
+    </script>
+
 </head>
 <body onload="onDeviceReady()">
+
+
     <div data-role="page" id="start">
         <div id="header" data-role="header" class="purple">
-            <h1>Quiz</h1>
+            <header class="mdl-layout__header">
+
+
+
+
+                        <span class="mdl-layout-title" id='top_title'><img src="img/logo-horizontal2x.png"></span>
+
+
+            </header>
+
         </div>
         <div data-role="content" style="text-align: center;">
-            <div id="fizz-logo"><img src="img/logo-red2x.png"></div>
-            <div class="intro-container slide-container"  style="display: block;">
-                <br /><br />
+            <div id="mdtimer">
+                <b></b>
+                <div style="font-size: 12px; color: #fff; text-shadow: none; margin-top:20px;">
+                    <b>Please Wait in <span>10</span> seconds</b>
+                </div>
 
-                <p>Let's get started!</p>
-                <p><a href="#quest1" class="nav-start" data-role="button">Start</a></p>
+                <video width="100%" height="auto" autoplay controls onended="close();">
+                    <source src="http://104.238.96.209/~project/db/app/views/audio/sample.mp4"
+                            type="video/mp4">
+                </video>
+                <h3>Message from the President</h3>
+            </div>
+            <div id="theQuiz">
+                <div id="fizz-logo"><img src="img/logo-red2x.png"></div>
+                <div class="intro-container slide-container"  style="display: block;">
+                    <br /><br />
+
+                    <p>Let's get started!</p>
+                    <p><a href="#quest1" class="nav-start" data-role="button">Start</a></p>
+                </div>
             </div>
         </div>
     </div>
 
     <div data-role="page" id="finish">
         <div id="header" data-role="header" class="purple">
-            <h1>Quiz Result</h1>
+            <span class="mdl-layout-title" id='top_title'><img src="img/logo-horizontal2x.png"></span>
         </div>
         <div data-role="content" >
             <div class="intro-container slide-container"  style="display: block;">
@@ -118,5 +165,9 @@
             <p><a class="nav-start" data-role="button" href="javascript:;" onclick="closeBrowser()">Close</a></p>
         </div>
     </div>
+
+
+
+
 </body>
 </html>
