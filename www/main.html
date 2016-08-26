@@ -23,18 +23,18 @@
     <script src="js/all.js"></script>
 
     <script type="text/javascript">
-        function showHome() {
+        /*  function showHome() {
             $('fixed-tab-home').show();
         }
 
-        function showProf() {
+       function showProf() {
             $('#fixed-tab-profile').show();
         }
 
         function showLeader() {
             $('fixed-tab-board').show();
         }
-
+*/
     </script>
 
 </head>
@@ -78,10 +78,10 @@
 
         <!-- Tabs -->
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-            <a href="#fixed-tab-home" class="mdl-layout__tab is-active" onclick="showHome();">Home</a>
+            <a href="#fixed-tab-home" class="mdl-layout__tab is-active">Home</a>
 
-            <a href="#fixed-tab-profile" class="mdl-layout__tab" onclick="showProf();">Profile</a>
-            <a href="#fixed-tab-board" class="mdl-layout__tab"  onclick="showLeader();">Leader Board</a>
+            <a href="#fixed-tab-profile" class="mdl-layout__tab">Profile</a>
+            <a href="#fixed-tab-board" class="mdl-layout__tab" >Leader Board</a>
             <!--  <a href="#fixed-tab-about" class="mdl-layout__tab">Incentives</a> -->
         </div>
 
@@ -237,14 +237,13 @@
             </div>
         </section>
 
-        <section class="mdl-layout__tab-panel " style="display:none;" id="fixed-tab-profile">
+        <section class="mdl-layout__tab-panel" id="fixed-tab-profile">
             <div class="page-content">
 
 
-                <table class='table table-bordered'>
+               <table class='table table-bordered'>
                     <div id='output'></div>
                 </table>
-
                 <input type='hidden' id='user_username'><Br>
                 Firstname:<span id='user_firstname'></span><Br>
                 <div style='clear:both;'></div>
