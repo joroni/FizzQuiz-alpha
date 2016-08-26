@@ -27,7 +27,7 @@
     </script>
 
 </head>
-<body>
+<body onload="hideProf();">
 
 <!-- Simple header with fixed tabs. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
@@ -69,7 +69,7 @@
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
             <a href="#fixed-tab-home" class="mdl-layout__tab is-active">Home</a>
 
-            <a href="#fixed-tab-profile" class="mdl-layout__tab ">Profile</a>
+            <a href="#fixed-tab-profile" class="mdl-layout__tab" onclick="showProf();">Profile</a>
             <a href="#fixed-tab-board" class="mdl-layout__tab ">Leader Board</a>
             <!--  <a href="#fixed-tab-about" class="mdl-layout__tab">Incentives</a>-->
         </div>
@@ -136,15 +136,21 @@
             <div class="page-content" style="text-align: center;">
                 <!--<h3>Welcome</h3>-->
                 <!-- <button  id="playMovie" onclick="playMovie();"  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Play</button>-->
-                <a href="#"
+               <!-- <a href="#"
                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored modal__trigger"
                    data-modal="#modal">
                     Play
-                </a>
+                </a>-->
+                <ul class="center-list">
+                    <li>
                 <a href="quiz.html" target="_blank" location="no"
                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                    Quiz
+                    Play
                 </a>
+                    </li>
+
+
+                </ul>
                 <!-- <a href="http://markrabey.com" target="_blank">Open Link</a>-->
 
                         <div id="modal" class="modal modal__bg">
@@ -277,9 +283,34 @@
          </section>-->
 
 
-        <section class="mdl-layout__tab-panel " id="fixed-tab-board">
+        <section class="mdl-layout__tab-panel " id="fixed-tab-board" style="padding: 20px 5px;">
             <div class="page-content">
 
+                <table class="mdl-data-table mdl-shadow--2dp">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                        <th class="mdl-data-table__cell--non-numeric">Unit</th>
+                        <th>Bottles</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>1</td>
+                        <td class="mdl-data-table__cell--non-numeric">Coastal BC</td>
+                        <td class="mdl-data-table__cell--non-numeric">West</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th>2</td>
+                        <td class="mdl-data-table__cell--non-numeric">Maritimes</td>
+                        <td class="mdl-data-table__cell--non-numeric">East</td>
+                        <td>0</td>
+                    </tr>
+
+                    </tbody>
+                </table>
 
             </div>
         </section>
