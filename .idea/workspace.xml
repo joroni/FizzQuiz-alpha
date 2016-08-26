@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41c6550d-ad02-4238-b490-8e5484076c3b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/game/css/custom.css" afterPath="$PROJECT_DIR$/www/game/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/quiz.html" afterPath="$PROJECT_DIR$/www/quiz.html" />
-    </list>
+    <list default="true" id="41c6550d-ad02-4238-b490-8e5484076c3b" name="Default" comment="" />
     <ignored path="FizzQuiz-alpha.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -422,12 +419,12 @@
       <option name="presentableId" value="Default" />
       <updated>1472203109598</updated>
       <workItem from="1472203111101" duration="8230000" />
-      <workItem from="1472214811756" duration="8940000" />
+      <workItem from="1472214811756" duration="8990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17170000" />
+    <option name="totallyTimeSpent" value="17220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="111" y="23" width="1204" height="724" extended-state="0" />
