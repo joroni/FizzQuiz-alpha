@@ -83,6 +83,7 @@ div.mdl-card__title-text {
     background: url(../img/logo2x.png) center / cover rgb(233, 30, 99) no-repeat;
     background-position-y: 4px;
     background-size: 130px 130px;
+    padding:10px 20px 10xp 20px !important;
 }
 
 /*.demo-card-wide > .mdl-card__title {

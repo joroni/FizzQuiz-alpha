@@ -78,7 +78,7 @@
             <div class="mdl-card__title">
 
                 <span class="mdl-card__title-text">
-                    <p class="mdl-card__title-greeting">Hi, &nbsp;</p>
+                    <p class="mdl-card__title-greeting" style="font-size:12px !important;">HI,&nbsp;</p>
 
                     <p id="user_firstname" class="truncate"></p>
                 </span>
@@ -95,6 +95,12 @@
             <div class="mdl-card__actions mdl-card--border">
                 <a href='#' class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                    Other Incentives
+                </a>
+            </div>
+
+            <div class="mdl-card__actions mdl-card--border">
+                <a href='#' class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                   About
                 </a>
             </div>
             <div class="mdl-card__menu">
@@ -126,12 +132,17 @@
     <main class="mdl-layout__content">
 
         <section class="mdl-layout__tab-panel is-active" id="fixed-tab-home">
-            <div class="page-content">
-                <h3>Welcome</h3>
+            <div class="page-content" style="text-align: center;">
+                <!--<h3>Welcome</h3>-->
                <!-- <button  id="playMovie" onclick="playMovie();"  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Play</button>-->
-                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored modal__trigger" onclick="playAuto();" data-modal="#modal">
+                <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored modal__trigger"  data-modal="#modal">
                    Play
                 </a>
+                <a href="game/quiz.html" target="_blank" location="no" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" >
+                Quiz
+                </a>
+                    <!-- <a href="http://markrabey.com" target="_blank">Open Link</a>-->
+
                 <div id="modal" class="modal modal__bg">
                     <div class="modal__dialog">
                         <div class="modal__content">
@@ -145,8 +156,9 @@
 
 
                             <div class="modal__text">-->
-                            <div id="mod_video">  <video width="100%" height="auto" controls> <source src="http://104.238.96.209/~project/db/app/views/audio/sample.mp4" type="video/mp4" ></video>
-                            </div>                               <!-- <a href="http://markrabey.com" target="_blank">Open Link</a>-->
+                            <div id="mod_video"><video width="100%" height="auto" autoplay controls onended="close();"> <source src="http://104.238.96.209/~project/db/app/views/audio/sample.mp4" type="video/mp4" ></video>
+                            </div>
+                            <!-- <a href="http://markrabey.com" target="_blank">Open Link</a>-->
                             <!--  </div>
 
                         <!-- <div class="modal__footer">
@@ -159,6 +171,24 @@
                 </div>
 
 
+
+                <script type="text/javascript" charset="utf-8">
+
+                    // Wait for device API libraries to load
+                    //
+                    document.addEventListener("deviceready", onDeviceReady, false);
+
+                    // device APIs are available
+                    //
+                    function onDeviceReady() {
+                        var ref = window.open('http://google.com', '_blank', 'location=no');
+                        ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+                        ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+                        ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+                        ref.addEventListener('exit', function(event) { alert(event.type); });
+                    }
+
+                </script>
                <!-- <div id="mod_video"></div>
                 <div id="mod_audio"></div>
                 <div id="mod_text"></div>-->
