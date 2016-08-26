@@ -153,9 +153,15 @@ h1 {
     margin: 24px 0;
 }
 
+ul.center-list {
+  
+    margin-left: -20px;
+}
+
 
 ul.center-list li {
     list-style: none;
+    margin-top:30.333%;
     padding:20px;
     margin-left: -20px;
 }
@@ -164,7 +170,6 @@ ul.center-list li {
 .mdl-layout.is-upgraded .mdl-layout__tab-panel {
     height: 100%;
 }
-
 
 
 
