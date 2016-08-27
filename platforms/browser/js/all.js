@@ -1,5 +1,4 @@
-
-$(function() {			
+$(function() {
 //Enable swiping...
 $("#swipe_menu").swipe( {
 	//Generic swipe handler for all directions
@@ -65,7 +64,7 @@ function fillmod() {
 
                 if (empty(text_db)) {
 
-                } else {
+                } else {xx
 
                     if (sessionStorage.getItem("lang")=='f' && !(empty(textF_db))) {
                         document.getElementById("mod_text").innerHTML ="<br><br><center>" +textF_db +"</center><br><br>";
@@ -106,17 +105,17 @@ function noNet(path, success, error)
     };
     xhr.open("GET", path, true);
     xhr.send();
-} 
- 
- 
- 
+}
+
+
+
 noNet('http://104.238.96.209/~project/db/json.php',
          function(data) {
 				for(i = 0; i < data.length; i++) {
 					//document.getElementById("result1").innerHTML += '<li> ' + data[i]['name'] + '</li>';
 					console.log(data[i]['name']);
-				}		
-		 } 
+				}
+		 }
 );
 
 

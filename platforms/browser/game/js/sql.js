@@ -8,7 +8,7 @@
 var quizy = [];
 var db;
 var dbCreated = true;
-
+var $j = jQuery.noConflict();
 
 window.localStorage.setItem('currentQuestion',-1);
 window.localStorage.setItem('selectedAnswer',-1);
@@ -62,7 +62,7 @@ function checkRows(tx)
 
 function getCount_success(tx, results)
 {
-    $('.busy').hide();
+    $j('.busy').hide();
 
     var questionCount = results.rows.item(0);
 
@@ -77,18 +77,18 @@ function getCount_success(tx, results)
 }
 
 function databaseNotSetup(tx, error) {
-    $('#busy').hide();
+    $j('#busy').hide();
     readJsonFile();
 }
 
 
 function readJsonFile() {
-    $.ajax({
+    $j.ajax({
         url: "json/quiz.json",
         //url: "http://104.238.96.209/~project/db/questions/1.json",
         dataType: "json",
         success: function(json) {
-            $(json.questions).each(function(){
+            $j(json.questions).each(function(){
                 var questions_json = {};
                 questions_json = this;
                 quizy.push(questions_json);
@@ -160,7 +160,7 @@ function isNumber(o) {
 }
 
 function transaction_error(tx, error) {
-    $('#busy').hide();
+    $j('#busy').hide();
     alert("transaction_error" + tx.message);
 }
 
@@ -186,10 +186,10 @@ function getQuestions_success(tx,results)
         var quest_div = "" +
             '<div data-role="page" data-dom-cache="true" id="quest' + question_no + '">' +
             '<div data-role="header" class="purple">'+
-          //  '<h1> Java Quiz</h1> ' +
+          '<h1>Fizz Quizz</h1> ' +
             '</div>' +
-            '<div data-role="content">' +
-            '<p>' +  question_no  +  ". " +  quest.question + '</p>' +
+            '<div class="quest" data-role="content">' +
+            '<p>' +  question_no  +  ". " +  quest.question + '</>' +
             '<ul data-role="listview" class="answers" id="quest' + question_no + '-list" question-no='  + question_no +'>';
         for(var i=0;i<answers.length;i++)
         {
@@ -199,13 +199,13 @@ function getQuestions_success(tx,results)
             '</ul><p><br/></p>';
 
         quest_div = quest_div + "" +
-            '<a href="#"  data-transition="slidedown" data-icon="arrow-r"  data-iconpos="right" data-question-no="'+question_no  +'" class="small-button" data-theme="c" data-role="button">' +
+            '<a href="#"  data-transition="slidedown" data-icon="arrow-r"  data-iconpos="right" data-question-no="'+question_no  +'" class="small-button purple" data-theme="a" data-role="button">' +
             'Next</a>' +
 
             '<span id="error-display-' +  question_no + '"></span>' +
             '</div> ' +
             '</div>';
-        $("body").append(quest_div);
+        $j("body").append(quest_div);
     }
 
 }
@@ -217,7 +217,7 @@ function checkResults(tx) {
 
 function checkResultsSuccess(tx,results) {
     var result = results.rows.item(0).count;
-    $('#result-answers').text(" " + result + " / " + total_questions);
+    $j('#result-answers').text(" " + result + " / " + total_questions);
 }
 
  
@@ -245,3 +245,4 @@ function updateSelectedAnswerSuccess(tx,results)  {
         tx.executeSql(query);        
     }
 }
+

@@ -24,18 +24,30 @@
 
     <script type="text/javascript">
         /*  function showHome() {
-            $('fixed-tab-home').show();
-        }
+         $('fixed-tab-home').show();
+         }
 
-       function showProf() {
-            $('#fixed-tab-profile').show();
-        }
+         function showProf() {
+         $('#fixed-tab-profile').show();
+         }
 
-        function showLeader() {
-            $('fixed-tab-board').show();
-        }
-*/
+         function showLeader() {
+         $('fixed-tab-board').show();
+         }
+         */
     </script>
+
+    <!-- Material Design Lite -->
+
+
+
+
+
+
+
+
+
+
 
 </head>
 <body onload="">
@@ -51,28 +63,30 @@
             <div id='swipe_menu'>
 
 
-               <span class="mdl-layout-title" id='top_title'><img src="img/logo-horizontal2x.png"></span>
+                <span class="mdl-layout-title" id='top_title'><img src="img/logo-horizontal2x.png"></span>
             </div>
 
 
-         <button   id="right_btn"
-                       class="mdl-button mdl-js-button mdl-button--icon ">
-                 <i class="material-icons">more_vert</i>
-             </button>
+            <button id="right_btn"
+                    class="mdl-button mdl-js-button mdl-button--icon ">
+                <i class="material-icons">more_vert</i>
+            </button>
 
-             <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                 for="right_btn">
-                 <li class="mdl-menu__item"><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                     <i class="material-icons">perm_identity</i>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="right_btn">
+                <li class="mdl-menu__item">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">perm_identity</i>
 
-                 </button></li>
+                    </button>
+                </li>
 
-                 <li class="mdl-menu__item">
+                <li class="mdl-menu__item">
 
                     Hi, <span id="user_firstname" class="truncate"></span></li>
-                 <li disabled class="mdl-menu__item">Disabled Action</li>
-                 <li class="mdl-menu__item">Yet Another Action</li>
-             </ul>
+                <li disabled class="mdl-menu__item">Disabled Action</li>
+                <li class="mdl-menu__item">Yet Another Action</li>
+            </ul>
 
         </div>
 
@@ -81,8 +95,8 @@
             <a href="#fixed-tab-home" class="mdl-layout__tab is-active">Home</a>
 
             <a href="#fixed-tab-profile" class="mdl-layout__tab">Profile</a>
-            <a href="#fixed-tab-board" class="mdl-layout__tab" >Leader Board</a>
-            <!--  <a href="#fixed-tab-about" class="mdl-layout__tab">Incentives</a> -->
+            <a href="#fixed-tab-board" class="mdl-layout__tab">Leader Board</a>
+            <a href="#start" class="mdl-layout__tab">Play</a>
         </div>
 
     </header>
@@ -147,55 +161,55 @@
             <div class="page-content" style="text-align: center;">
                 <!--<h3>Welcome</h3>-->
                 <!-- <button  id="playMovie" onclick="playMovie();"  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Play</button>-->
-               <!-- <a href="#"
-                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored modal__trigger"
-                   data-modal="#modal">
-                    Play
-                </a>-->
+                <!-- <a href="#"
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored modal__trigger"
+                    data-modal="#modal">
+                     Play
+                 </a>-->
                 <ul class="center-list">
                     <li>
-                <a href="quiz.html" target="_blank" location="no"
-                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                    Play
-                </a>
+                        <a href="game/gamer.html" class="mdl-layout__tab mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Play</a>
+                       <!-- <a href="quiz.html" target="_blank" location="no"
+                           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                            Play
+                        </a>-->
                     </li>
 
 
                 </ul>
                 <!-- <a href="http://markrabey.com" target="_blank">Open Link</a>-->
 
-                        <div id="modal" class="modal modal__bg">
-                            <div class="modal__dialog">
-                                <div class="modal__content">
-                                    <div id="mod_video">
-                                        <video width="100%" height="auto" autoplay controls onended="close();">
-                                            <source src="http://104.238.96.209/~project/db/app/views/audio/sample.mp4"
-                                                    type="video/mp4">
-                                        </video>
-                                    </div>
-                                </div>
+                <div id="modal" class="modal modal__bg">
+                    <div class="modal__dialog">
+                        <div class="modal__content">
+                            <div id="mod_video">
+                                <video width="100%" height="auto" autoplay controls onended="close();">
+                                    <source src="http://104.238.96.209/~project/db/app/views/audio/sample.mp4"
+                                            type="video/mp4">
+                                </video>
                             </div>
                         </div>
-                            <!--<div class="modal__header">
-                                <div class="modal__title">
-                                    <h2 class="modal__title-text">Message</h2>
-                                </div>
+                    </div>
+                </div>
+                <!--<div class="modal__header">
+                    <div class="modal__title">
+                        <h2 class="modal__title-text">Message</h2>
+                    </div>
 
-                              <span class="mdl-button mdl-button--icon mdl-js-button  material-icons  modal__close"></span>
-                            </div>
+                  <span class="mdl-button mdl-button--icon mdl-js-button  material-icons  modal__close"></span>
+                </div>
 
 
-                            <div class="modal__text">-->
+                <div class="modal__text">-->
 
-                            <!-- <a href="http://markrabey.com" target="_blank">Open Link</a>-->
-                            <!--  </div>
+                <!-- <a href="http://markrabey.com" target="_blank">Open Link</a>-->
+                <!--  </div>
 
-                        <!-- <div class="modal__footer">
-                               <a class="mdl-button mdl-button--colored mdl-js-button  modal__close">
-                                   Close
-                               </a>
-                           </div>-->
-
+            <!-- <div class="modal__footer">
+                   <a class="mdl-button mdl-button--colored mdl-js-button  modal__close">
+                       Close
+                   </a>
+               </div>-->
 
 
                 <!-- <div id="mod_video"></div>
@@ -217,17 +231,17 @@
                                   <span class="mdl-list__item-primary-content">
                                  <i class="material-icons">face</i> &nbsp; User Full name
                                 </span>
-                                                </li>
+                    </li>
 
 
-                                                <li class="mdl-list__item">
+                    <li class="mdl-list__item">
                                   <span class="mdl-list__item-primary-content">
                                  <i class="material-icons">note</i> &nbsp; Test Link
                                 </span>
-                                                </li>
+                    </li>
 
 
-                                                <li class="mdl-list__item" onclick='log_out();'>
+                    <li class="mdl-list__item" onclick='log_out();'>
                                   <span class="mdl-list__item-primary-content">
                                   <i class="material-icons">error</i> &nbsp; Logout
                                 </span>
@@ -241,7 +255,7 @@
             <div class="page-content">
 
 
-               <table class='table table-bordered'>
+                <table class='table table-bordered'>
                     <div id='output'></div>
                 </table>
                 <input type='hidden' id='user_username'><Br>
@@ -261,30 +275,61 @@
 
             </div>
         </section>
-        <!-- <section class="mdl-layout__tab-panel " style="display:none;" id="fixed-tab-home">
+
+
+       <section class="mdl-layout__tab-panel" id="start">
              <div class="page-content">
 
 
-                 <table class='table table-bordered'>
-                     <div id='output'></div>
-                 </table>
 
-                 <input type='hidden' id='user_username'><Br>
-                 Firstname:<span id='user_firstname'></span><Br>
-                 <div style='clear:both;'></div>
 
-                 <div class="mdl-textfield mdl-js-textfield">
-                     <input class="mdl-textfield__input" type="text" id="fname">
-                 </div>
-                 <button type='button' class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect " onclick='update_user();'>
-                     Update
-                 </button>
-                 <div id='update_1' style='display:none;'>user updated</div>
-                 <div id='update_0' style='display:none;'>Error</div>
+                 <!-- QUIZ -->
+
+
+                         <h1>Quiz</h1>
+
+
+
+                             <p>Let's get started!</p>
+                             <p><a href="#quest1" class="nav-start" data-role="button">Start</a></p>
+
+
+
+
+
+                 <!-- QUIZ -->
+
 
 
              </div>
-         </section>-->
+         </section>
+
+
+
+        <section class="mdl-layout__tab-panel" style="display:none;" id="finish">
+            <div class="page-content">
+
+
+
+
+
+                    <div data-role="header">
+                        <h1>Quiz Result</h1>
+                    </div>
+                    <div data-role="content" >
+                        <div class="intro-container slide-container"  style="display: block;">
+                            <p>Result:  </p>
+                            <p id="result-answers">
+                            </p>
+                        </div>
+                    </div>
+
+                <!-- QUIZ -->
+
+
+
+            </div>
+        </section>
 
 
         <section class="mdl-layout__tab-panel " id="fixed-tab-board" style="padding: 20px 5px;">
@@ -301,13 +346,15 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <th>1</td>
+                        <th>1
+                        </td>
                         <td class="mdl-data-table__cell--non-numeric">Coastal BC</td>
                         <td class="mdl-data-table__cell--non-numeric">West</td>
                         <td>0</td>
                     </tr>
                     <tr>
-                        <th>2</td>
+                        <th>2
+                        </td>
                         <td class="mdl-data-table__cell--non-numeric">Maritimes</td>
                         <td class="mdl-data-table__cell--non-numeric">East</td>
                         <td>0</td>
@@ -337,6 +384,5 @@
 </div>
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
 <script src="js/material-modal.min.js"></script>
-</body>
 </body>
 </html>

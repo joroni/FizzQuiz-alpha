@@ -14,7 +14,7 @@
     <script type="text/javascript" charset="utf-8"  src="js/cordova-1.7.0.js"></script>
     <script type="text/javascript" charset="utf-8"  src="game/js/Quiz-Java-Fundamentals.js"></script>
 
-
+<script src="game/js/sql.js"></script>
     <script src="js/user.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -23,6 +23,8 @@
     <script type="text/javascript" charset="utf-8"  src="game/js/sql.js"></script>
 
     <script type="text/javascript"  charset="utf-8">
+        
+    getDatabase();
     
     var total_questions=0;
     var currentQuestion=-1;
@@ -82,10 +84,21 @@
             history.back();
         }
     }
+  
 */
+    
+    
+   /*
+    $('#closeAppBrowser').on(click, function(){
+                             delete window.open // Reverts the call back to it's prototype's default
+                             }*/
+                             
     function closeBrowser(){
-
-       window.close();
+        alert('close');
+      // delete window.open // Reverts the call back to it's prototype's default
+       
+       
+       
     }
 
 
@@ -168,7 +181,15 @@
                 <p id="result-answers">
                 </p>
             </div>
-            <p><a class="nav-start" data-role="button" onclick="closeBrowser();">Closing</a></p>
+
+
+                <a href="main.html" class="mdl-layout__tab mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Play</a>
+                <!-- <a href="quiz.html" target="_blank" location="no"
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                     Play
+                 </a>-->
+
+            <p><a class="nav-start" data-role="button" id="closeAppBrowser" onclick="closeBrowser();">Closing</a></p>
         </div>
     </div>
 
