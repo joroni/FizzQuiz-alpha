@@ -120,7 +120,7 @@ $.post( "http://104.238.96.209/~project/db/loginuser", { username: user_name_inp
 		}
   });
 
-	$.post( "http://104.238.96.209/~project/db/media", { is_live: 1 })
+	/*$.post( "http://104.238.96.209/~project/db/media", { is_live: 1 })
 		.done(function( data ) {
 			if(data == 0){
 				//$('#login_username_error').show();
@@ -130,7 +130,7 @@ $.post( "http://104.238.96.209/~project/db/loginuser", { username: user_name_inp
 				//window.location.href = "main.html";
                 $('#fixed-tab-home').html();
 			}
-		});
+		});*/
 
 }
 

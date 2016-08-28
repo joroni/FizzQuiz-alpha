@@ -21,6 +21,7 @@
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/user.js"></script>
     <script src="js/all.js"></script>
+    <script src="js/myApp.js"></script>
 
 
 
@@ -82,6 +83,14 @@ function unloadQuiz() {
 
 </head>
 <body onload="unloadQuiz();">
+<div id="loader">
+    <div class="mdl-spinner mdl-js-spinner is-active"></div>
+</div>
+
+
+
+
+
 
 <!-- Simple header with fixed tabs. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
@@ -127,7 +136,7 @@ function unloadQuiz() {
 
             <a href="#fixed-tab-profile" class="mdl-layout__tab">Profile</a>
             <a href="#fixed-tab-board" class="mdl-layout__tab">Leader Board</a>
-            <a href="#start" class="mdl-layout__tab">Play</a>
+
         </div>
 
     </header>
@@ -308,59 +317,7 @@ function unloadQuiz() {
         </section>
 
 
-       <section class="mdl-layout__tab-panel" id="start">
-             <div class="page-content">
 
-
-
-
-                 <!-- QUIZ -->
-
-
-                         <h1>Quiz</h1>
-
-
-
-                             <p>Let's get started!</p>
-                             <p><a href="#quest1" class="nav-start" data-role="button">Start</a></p>
-
-
-
-
-
-                 <!-- QUIZ -->
-
-
-
-             </div>
-         </section>
-
-
-
-        <section class="mdl-layout__tab-panel" style="display:none;" id="finish">
-            <div class="page-content">
-
-
-
-
-
-                    <div data-role="header">
-                        <h1>Quiz Result</h1>
-                    </div>
-                    <div data-role="content" >
-                        <div class="intro-container slide-container"  style="display: block;">
-                            <p>Result:  </p>
-                            <p id="result-answers">
-                            </p>
-                        </div>
-                    </div>
-
-                <!-- QUIZ -->
-
-
-
-            </div>
-        </section>
 
 
         <section class="mdl-layout__tab-panel " id="fixed-tab-board" style="padding: 20px 5px;">
