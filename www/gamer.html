@@ -99,7 +99,51 @@
 
     <!-- jQM Design  -->
 
+    <script type="text/javascript">
+        /*  function showHome() {
+         $('fixed-tab-home').show();
+         }
 
+         function showProf() {
+         $('#fixed-tab-profile').show();
+         }
+
+         function showLeader() {
+         $('fixed-tab-board').show();
+         }
+         */
+
+
+        function removejscssfile(filename, filetype){
+            var targetelement=(filetype=="js")? "script" : (filetype=="css")? "link" : "none" //determine element type to create nodelist from
+            var targetattr=(filetype=="js")? "src" : (filetype=="css")? "href" : "none" //determine corresponding attribute to test for
+            var allsuspects=document.getElementsByTagName(targetelement)
+            for (var i=allsuspects.length; i>=0; i--){ //search backwards within nodelist for matching elements to remove
+                if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(filename)!=-1)
+                    allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
+            }
+        }
+
+
+        function unloadQuiz() {
+
+
+            removejscssfile("game/css/custom.css", "css") //remove all occurences "somestyle.css" on page
+            removejscssfile("game/css/jquery.mobile.theme-1.1.0.css", "css") //remove all occurences "somestyle.css" on page
+            removejscssfile("game/css/jquery.mobile.structure-1.1.0.css", "css") //remove all occurences "somestyle.css" on page
+            removejscssfile("game/js/jquery-1.7.2.min.js", "js") //remove all occurences "somestyle.css" on page
+            removejscssfile("game/js/jquery.mobile-1.1.0.js", "js") //remove all occurences "somestyle.css" on page
+            removejscssfile("game/js/Quiz-Java-Fundamentals.js", "js") //remove all occurences of "somescript.js" on page
+            removejscssfile("game/js/cordova-1.7.0.js", "js") //remove all occurences of "somescript.js" on page
+            removejscssfile("game/js/sql.js", "js") //remove all occurences of "somescript.js" on page
+
+        }
+       function BacktoMain() {
+
+           unloadQuiz();
+           window.location = "main.html";
+       }
+    </script>
 
 
 
@@ -122,7 +166,7 @@
             <div class="intro-container slide-container"  style="display: block;">
                 <h4>Let's get started!</h4>
                 <p><a href="#quest1" class="nav-start purple" data-role="button">Start</a></p>
-                <p><a href="main.html" class="nav-start purple" data-role="button">Cancel</a></p>
+                <p><a href="#" class="nav-start purple" data-role="button" onclick="BacktoMain();">Cancel</a></p>
             </div>
         </div>
     </div>

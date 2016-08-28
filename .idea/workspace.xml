@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41c6550d-ad02-4238-b490-8e5484076c3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/gamer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/gamer.html" afterPath="$PROJECT_DIR$/www/gamer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/main.html" afterPath="$PROJECT_DIR$/www/main.html" />
     </list>
     <ignored path="FizzQuiz-alpha.iws" />
@@ -50,36 +49,12 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1422">
-              <caret line="170" column="33" selection-start-line="170" selection-start-column="33" selection-end-line="170" selection-end-column="33" />
+            <state relative-caret-position="150">
+              <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="67" selection-end-column="1" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#3485#3491#0" expanded="true" />
+                <element signature="e#5260#5266#0" expanded="true" />
                 <element signature="n#style#0;n#section#5;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quiz-game.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/quiz-game.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
-              <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gamer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/game/gamer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +63,8 @@
       <file leaf-file-name="gamer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/gamer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="396">
+              <caret line="168" column="29" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -343,12 +318,12 @@
       <workItem from="1472246578822" duration="20000" />
       <workItem from="1472247112697" duration="6679000" />
       <workItem from="1472263356534" duration="18707000" />
-      <workItem from="1472309240088" duration="1207000" />
+      <workItem from="1472309240088" duration="3533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49101000" />
+    <option name="totallyTimeSpent" value="51427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1204" height="724" extended-state="0" />
@@ -448,7 +423,7 @@
           <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3485#3491#0" expanded="true" />
+            <element signature="e#5260#5266#0" expanded="true" />
             <element signature="n#style#0;n#section#5;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -651,6 +626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="194" column="53" selection-start-line="194" selection-start-column="53" selection-end-line="194" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,16 +658,6 @@
           <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
           <folding>
             <marker date="1472284796000" expanded="false" signature="4422:4487" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/quiz-game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -746,21 +712,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/game/gamer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="645">
+          <caret line="43" column="77" selection-start-line="34" selection-start-column="2" selection-end-line="43" selection-end-column="77" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/quiz-game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
-          <caret line="170" column="33" selection-start-line="170" selection-start-column="33" selection-end-line="170" selection-end-column="33" />
+        <state relative-caret-position="150">
+          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="67" selection-end-column="1" />
           <folding>
             <element signature="n#style#0;n#p#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#3485#3491#0" expanded="true" />
+            <element signature="e#5260#5266#0" expanded="true" />
             <element signature="n#style#0;n#section#5;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -768,8 +744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/gamer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="396">
+          <caret line="168" column="29" selection-start-line="168" selection-start-column="29" selection-end-line="168" selection-end-column="29" />
           <folding />
         </state>
       </provider>
