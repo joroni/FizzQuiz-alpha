@@ -181,3 +181,7 @@ ul.center-list li {
     z-index: 2000;
     position:fixed;
 }
+
+video {
+    margin: 0 !important;
+}
