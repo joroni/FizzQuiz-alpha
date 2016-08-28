@@ -172,6 +172,12 @@ ul.center-list li {
 }
 
 
-
-
-
+#loader {
+    text-align: center;
+    background: #fff;
+    padding-top:80%;
+    width: 100%;
+    height:100%;
+    z-index: 2000;
+    position:fixed;
+}

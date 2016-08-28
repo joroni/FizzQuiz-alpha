@@ -24,7 +24,7 @@
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/user.js"></script>
     <script src="js/all.js"></script>
-    <script src="js/app.js"></script>
+
     <!-- Material Design Lite -->
 
 
@@ -43,7 +43,7 @@
     <script type="text/javascript" charset="utf-8"  src="game/js/cordova-1.7.0.js"></script>
     <script type="text/javascript" charset="utf-8"  src="game/js/Quiz-Java-Fundamentals.js"></script>
     <script type="text/javascript" charset="utf-8"  src="game/js/sql.js"></script>
-
+    <script src="js/myApp.js"></script>
     <script type="text/javascript"  charset="utf-8">
 
     var total_questions=0;
@@ -56,6 +56,7 @@
         $j(this).addClass('selected');
     });
         function onDeviceReady() {
+            getDatabase();
             sql();
             currentQuestion = parseInt(window.localStorage.getItem('currentQuestion'),10);
             window.localStorage.setItem("currentQuestion",currentQuestion + 1);
@@ -143,6 +144,7 @@
 
            unloadQuiz();
            window.location = "main.html";
+           loaderSpin();
        }
     </script>
 
@@ -152,7 +154,9 @@
 </head>
 <body onload="onDeviceReady()">
 
-
+<div id="loader">
+    <div class="mdl-spinner mdl-js-spinner is-active"></div>
+</div>
 
 
 
@@ -160,7 +164,8 @@
 
     <div data-role="page" id="start">
         <div data-role="header">
-            <h1>Quiz</h1>
+           <h2> Hi, <span id="user_firstname" class="truncate"></span></h2>
+            <!--<h1>Quiz</h1>-->
         </div>
         <div data-role="content" style="text-align: center;">
           <!--  <p>Quiz on PhoneGap</p>-->
