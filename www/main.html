@@ -21,7 +21,9 @@
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/user.js"></script>
     <script src="js/all.js"></script>
-    <script src="js/myApp.js"></script>
+
+    <script src="game/js/sql.js"></script>
+  <!--  <script src="js/myApp.js"></script>-->
 
 
 
@@ -56,7 +58,7 @@
 
 function unloadQuiz() {
 
-
+        getDatabase();
         removejscssfile("game/css/custom.css", "css") //remove all occurences "somestyle.css" on page
         removejscssfile("game/css/jquery.mobile.theme-1.1.0.css", "css") //remove all occurences "somestyle.css" on page
         removejscssfile("game/css/jquery.mobile.structure-1.1.0.css", "css") //remove all occurences "somestyle.css" on page
@@ -83,7 +85,7 @@ function unloadQuiz() {
 
 </head>
 <body onload="unloadQuiz();">
-<div id="loader">
+<div id="loader" style="display: none;">
     <div class="mdl-spinner mdl-js-spinner is-active"></div>
 </div>
 
