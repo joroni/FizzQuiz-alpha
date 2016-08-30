@@ -22,20 +22,3 @@ function loaderSpin() {
     }
 
 }
-
-
-$(document).ready(function () {
-
-    setTimeout(buttonAnimate, 3000)
-        function buttonAnimate() {
-
-            $('.main-buttons li').addClass('animated bounceInDown');
-
-        }
-
-       /* $('.main-buttons li a').on('click, function(){
-
-            $('.main-buttons li a').addClass('animated zoomIn');
-        }*/
-
-});
