@@ -1,3 +1,4 @@
+
 body {
     font-weight: 100;
     font-family: "Roboto", sans-serif;
@@ -161,16 +162,19 @@ ul.center-list {
 
 ul.center-list li {
     list-style: none;
-    margin-top:30.333%;
+    margin-top: 0 !important;
     padding:20px;
     margin-left: -20px;
 }
 
-
 .mdl-layout.is-upgraded .mdl-layout__tab-panel {
-    height: 100%;
+    max-height: 100%;
 }
 
+.mdl-layout__content {
+    background: url(../img/bubbles.gif) #f8f8f8 no-repeat !important;
+    background-size: cover !important;
+}
 
 #loader {
     text-align: center;

@@ -115,7 +115,8 @@ function populateQuizTable(tx) {
             "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
             "question VARCHAR(500), " +
             "answers VARCHAR(1000), " +
-            "correct_answer INTEGER)";
+            "correct_answer INTEGER, " +
+            "userStat INTEGER)";
     tx.executeSql(sql);
 
 
@@ -125,11 +126,12 @@ function populateQuizTable(tx) {
     {
         var myquestion = {};
         myquestion = quizy[i];
-        var query = "INSERT INTO QuizTable (id, question, answers, correct_answer) VALUES ('" +
+        var query = "INSERT INTO QuizTable (id, question, answers, correct_answer, userStat) VALUES ('" +
             i + "', '" +
             myquestion.question + "', '" +
             myquestion.answers + "','" +
-            myquestion.correctAnswer + "')";
+            myquestion.correctAnswer + "','" +
+            myquestion.userStat + "')";
         tx.executeSql(query);
     }
 
@@ -171,7 +173,7 @@ function populateDB_success() {
 
 function getQuestions(tx)
 {
-    var sql = "select * from QuizTable"; 
+    var sql = "select * from QuizTable";
     tx.executeSql(sql, [], getQuestions_success);
 }
 
@@ -199,10 +201,10 @@ function getQuestions_success(tx,results)
             '</ul><p><br/></p>';
 
         quest_div = quest_div + "" +
-            '<a href="#"  data-transition="slidedown" data-icon="arrow-r"  data-iconpos="right" data-question-no="'+question_no  +'" class="small-button purple" data-theme="a" data-role="button">' +
-            'Next</a>' +
+            '<a href="quiz-info.html" role="button" data-transition="slidedown" data-icon="arrow-r"  data-iconpos="right" data-question-no="'+question_no  +'" class="small-button purple" data-theme="a" data-role="button">' +
+            'Submit</a>' +
 
-            '<span id="error-display-' +  question_no + '"></span>' +
+        '<span id="error-display-' +  question_no + '"></span>' +
             '</div> ' +
             '</div>';
         $j("body").append(quest_div);
@@ -212,7 +214,7 @@ function getQuestions_success(tx,results)
 
 function checkResults(tx) {
         var query = "select count(*) as count from QuizResultTable where selected_answer = 1";
-        var res  = tx.executeSql(query,[], checkResultsSuccess);    
+        var res  = tx.executeSql(query,[], checkResultsSuccess);
 }
 
 function checkResultsSuccess(tx,results) {
@@ -220,13 +222,13 @@ function checkResultsSuccess(tx,results) {
     $j('#result-answers').text(" " + result + " / " + total_questions);
 }
 
- 
+
 
 
 function updateSelectedAnswer(tx) {
         var q_no = window.localStorage.getItem("currentQuestion");
         var query = "select correct_answer from Quiztable where id = " + (q_no);
-        var res  = tx.executeSql(query,[], updateSelectedAnswerSuccess);    
+        var res  = tx.executeSql(query,[], updateSelectedAnswerSuccess);
 }
 
 
@@ -242,7 +244,7 @@ function updateSelectedAnswerSuccess(tx,results)  {
         else {
             query = "UPDATE QuizResultTable set selected_answer = 0 where question_no=" + q_no ;
         }
-        tx.executeSql(query);        
+        tx.executeSql(query);
     }
 }
 
